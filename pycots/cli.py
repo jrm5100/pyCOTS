@@ -24,14 +24,14 @@ from pycots.plot import plot_counts
     "-v",
     required=True,
     type=click.Path(exists=True),
-    help="Compressed and indexed VCF file with SNPs",
+    help="Compressed and indexed VCF file with SNVs to consider when matching",
 )
 @click.option(
     "--output",
     "-o",
     required=True,
     type=click.Path(exists=False, writable=True),
-    help="Output file listed matched locations and PAM sequences",
+    help="Output file location for the file listing matched locations and PAM sequences",
 )
 @click.option(
     "--plot",
