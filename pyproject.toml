@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pycots"
+version = "0.1.0"
+description = "CRISPR Off-Target Search"
+authors = ["John McGuigan <jrm5100@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+click = "^8.1.7"
+cyvcf2 = "^0.31.1"
+pyfaidx = "^0.8.1.1"
+pandas = "^2.2.2"
+matplotlib = "^3.9.1"
+scipy = "^1.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+pytest-datadir = "^1.5.0"
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pycots = "pycots.cli:cli"
