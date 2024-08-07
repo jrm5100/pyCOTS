@@ -41,7 +41,7 @@ A pattern "AN" converts to a matrix:
 01
 01
 01
-``
+```
 
 Performing matrix multiplication at the first position gets
 
